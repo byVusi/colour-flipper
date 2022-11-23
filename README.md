@@ -6,7 +6,7 @@ A simple flipper that lets you randomly change the background colour of the page
 
 Just click on the button and change the background colour of the page. The current colour's hexadecimal or colour's name will be displayed too. 
 
-<img src="images/colour-flipper-preview-300w.gif" width="300">
+<img src="images/preview.gif" width="300">
 
 ## Technologies
 This project is created with:
