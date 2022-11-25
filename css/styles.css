@@ -1,4 +1,17 @@
+/* stylelint-disable no-duplicate-selectors */
+
 /* || General */
+
+:root {
+  --button-bg: #06f;
+  --button-bg-hover: #005ce6;
+  --button-bg-active: #0052cc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
 
 html {
   font: 62.5%/1.5 system-ui, Helvetica, Arial, sans-serif;
@@ -7,32 +20,31 @@ html {
 /* || Layout */
 
 body {
-  block-size: 100vh;
   display: grid;
   place-items: center;
 }
+
 div {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
 }
 
-/* || Spacing */
+div span {
+  align-self: center;
+}
+
+/* || Box model */
 
 body {
-  margin: 0;
-  padding: 0;
+  block-size: 100vh;
 }
+
 div {
   block-size: 20rem;
   padding: 1rem;
 }
-div p {
-  text-align: center;
-}
-div span {
-  align-self: center;
-}
+
 button {
   padding-block: 1.6rem;
 }
@@ -42,12 +54,18 @@ button {
 body {
   font-size: 1.6rem;
 }
+
+div p {
+  text-align: center;
+}
+
 div span {
   font-size: 2.4rem;
   letter-spacing: .25rem;
   font-weight: bold;
-  text-shadow: 0px 0px 1px black;
+  text-shadow: 0 0 1px black;
 }
+
 button {
   font-size: inherit;
 }
@@ -58,18 +76,21 @@ div {
   border-radius: .5rem;
   background-color: #fff;
 }
+
 button {
   color: #fff;
-  background-color: #0066ff;
+  background-color: var(--button-bg);
   border-radius: 5px;
   border: 0;
   cursor: pointer;
 }
+
 button:hover {
-  background-color: #005ce6;
+  background-color: var(--button-bg-hover);
 }
+
 button:active {
-  background-color: #0052cc;
+  background-color: var(--button-bg-active);
 }
 
 /* || Media queries */
