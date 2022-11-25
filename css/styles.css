@@ -61,7 +61,7 @@ div p {
 
 div span {
   font-size: 2.4rem;
-  letter-spacing: .25rem;
+  letter-spacing: 0.25rem;
   font-weight: bold;
   text-shadow: 0 0 1px black;
 }
@@ -73,7 +73,7 @@ button {
 /* || Colour and graphics */
 
 div {
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-color: #fff;
 }
 
